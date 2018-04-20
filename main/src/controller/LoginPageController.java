@@ -18,8 +18,7 @@ public class LoginPageController {
   private void loginAction(ActionEvent event) throws Exception {
     loginButton.setDisable(true);
     WebBrowserDriver wbd = new WebBrowserDriver();
-   // wbd.datenUebergabe(usernameField.getText(), passwordField.getText());
-    wbd.datenUebergabe("david_pawellek", "itaka--143");
+    wbd.datenUebergabe(usernameField.getText(), passwordField.getText());
     wbd.starteBrowser();
     wbd.login();
     Stage stage = (Stage) loginButton.getScene().getWindow();
